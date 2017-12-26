@@ -1,0 +1,62 @@
+/*----------------------------------------------*/
+/*--------Form del perfil de usuario------------*/
+article{
+	margin: 0 auto;
+	padding: 30px 0 20px;
+	max-width: 700px;
+}
+
+ul.horizontal { /* Horizontal lists */
+	display: inline;
+	margin: 0
+}
+
+ul.horizontal > LI {
+	display: inline-block;
+}
+
+/**
+ * TABS
+ *
+ * -------------------------------------------------------------------------------------------------
+ */
+.tabs > DIV {
+	background-color:#90E8E1;
+	padding:60px;
+}
+.tabs LI {
+	background-color:#F0F0F0;
+}
+.tabs .horizontal a {
+	color: #D1D1D1;
+	display: block;
+	font-weight: 300;
+	font-size:16px;
+	padding: 14px 24px;
+	text-decoration: none;
+}
+.tabs LI:hover {
+	background: #D1D1D1;
+}
+.tabs LI:hover A {
+	color: #FFFFFF;
+}
+.active {
+	background-color: #90E8E1 !important;
+}
+.active A {
+	color: #454545 !important;
+}
+.info{
+    text-align:center;
+}
+.info form table{
+    margin:0 auto;
+    width:450px;
+}
+.info form table td{
+    padding:05px 0 05px 05px;
+}
+.info form input[type="submit"]{
+    margin:05px 0;
+}

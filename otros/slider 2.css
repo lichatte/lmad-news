@@ -1,0 +1,53 @@
+.slider {
+    height: 250px;
+    width:55.6%;
+    margin:0 auto;
+	text-align:center;
+	overflow:hidden;
+	float:left;
+}
+.slider .frames {
+    height: 250px;
+    position: relative;
+}
+.slider .frames .slide {
+    height: 250px;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+}
+.slider .slide:target { z-index: 100 }
+.slider .frames .slide img {
+    min-height: 250px;
+	height:auto;
+    width: 100%;
+}
+.slider .frames .slide nav a {
+    background-color:#fff;
+    color: #454545;
+    font-size: 16px;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top:0px;
+    width: 50px;
+    visibility: hidden;
+	padding-top: 115px;
+	height:100%;
+}
+.slider:hover .frames .slide nav a {
+    opacity: 0.5;
+    visibility: visible;
+	
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.slider .frames .slide nav .prev {
+    left: 0;
+}
+.slider .frames .slide nav .next {
+    right: 0;
+}

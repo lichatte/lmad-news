@@ -1,0 +1,40 @@
+ul.resultados{
+	margin:05% 0 05% 20%;
+	width:40%;
+}
+ul.resultados li{
+	margin:45px 0;
+	padding:15px;
+	border-top:1px solid #F0F0F0;
+}
+ul.resultados li:hover{
+	cursor:pointer;
+}
+ul.resultados li img{
+	height:70px;
+	width:70px;
+	float:left;
+	padding:0 15px;
+}
+.fecha{
+    font-size:80%;
+    color:#94979F;
+    margin-left:100px;
+    margin-top:15px;
+}
+.filtros{
+	background-color:#90e8e1;
+	padding:35px;
+	width:25%;
+	margin:05%;
+}
+.filtros input[type="text"]{
+	width:100px;
+	margin-top:05px;
+}
+.filtros input[name="titulo"]{
+	width:300px;
+}
+.filtros div{
+	text-align:center;
+}

@@ -1,0 +1,140 @@
+#noticia-wrapper{
+    margin:0 auto;
+    max-width: 60%;
+    background-color:#90E8E1;
+    padding:40px;
+    height:auto;
+}
+#noticia-wrapper h3{
+    text-align:center;
+    margin-bottom:20px;
+}
+#comentarios{
+    margin:10px auto 0;
+    padding:40px;
+    clear:both;
+}
+#tucomentario input[type="submit"]{
+    position:relative;
+    top:-30px;
+}
+#tucomentario input[type="text"]{
+    border:none;
+    width:25%;
+    margin-left:15px;
+}
+#tucomentario img{
+    float:left;
+    width:60px;
+    height:60px;
+    margin:0 15px;
+}
+#tucomentario textarea{
+    margin:10px 0 20px 15px;
+    width:55%;
+}
+.comment {
+    overflow: hidden;
+    padding: 0 0 1em;
+    margin: 0 auto 1em;
+    *zoom: 1;
+    color:#454545;
+    max-width:95%;
+}
+.comment-img {
+    float: left;
+    margin-right: 33px;
+    overflow: hidden;
+}
+.comment-img img {
+    display: block;
+}
+.comment-body {
+    overflow: hidden;
+}
+.comment .text {
+    padding: 10px;
+    border: 1px solid #F0F0F0;
+    border-radius: 8px;
+    background: #fff;
+}
+.comment .text p:last-child {
+    margin: 0;
+}
+.comment .text p:hover {
+     cursor:default;
+}
+.comment .attribution {
+    margin: 0.5em 0 0;
+    font-size: 14px;
+    color: #454545;
+}
+.comment .attribution:hover {
+    cursor:default;
+}
+.comment #eliminarCom input[type="submit"]{
+    position:absolute;
+    width:30px;
+    top:04px;
+    right:05px;
+    background:url('../images/trashcan.png');
+    background-size:30px;
+    background-repeat:no-repeat;
+    background-position: center;
+    border: 0;
+}
+#noticia-wrapper #likeNot input[type="submit"]{
+    float:right;
+    width:30px;
+    height:25px;
+    margin-right: 05px;
+    background:url('../images/thumbsup.png');
+    background-size:30px;
+    background-repeat:no-repeat;
+    background-position: center;
+    border: 0;
+}
+/* Decoracion*/
+.comments,
+.comment {
+    position: relative;
+}
+.comments:before,
+.comment:before,
+.comment .text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 65px;
+}
+.coments:before {
+    width: 3px;
+    top: -20px;
+    bottom: -20px;
+    background: #FFFFFF;
+}
+.comment:before {
+    width: 9px;
+    height: 9px;
+    border: 3px solid #F0F0F0;
+    border-radius: 100px;
+    margin: 16px 0 0 -6px;
+    background: #FFFFFF;
+}
+.comment:hover:before {
+    background: #FFAE00;
+}
+.comment .text:before {
+    top: 18px;
+    left: 78px;
+    width: 9px;
+    height: 9px;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: #F0F0F0;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}

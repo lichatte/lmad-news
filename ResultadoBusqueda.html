@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+        <link rel="stylesheet" type="text/css" href="estilos/Resultado Busqueda.css">
+        <link rel="stylesheet" type="text/css" href="estilos/modal.css"/>
+		<meta charset="utf8"/>
+        <title>Resultado de búsqueda</title>
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="js/jQuery.succinct.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.truncate').succinct({
+                    size: 110
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="buscador">
+            <form method="" action="ResultadoBusqueda.html">
+                <input name="titulo" type="text" placeholder="Escribe tu búsqueda"/>
+                <input type="submit" value=""/>
+            </form>
+        </div>
+
+        <div id="login">
+            <a class="modalLink"><img src="images/key.png" width="10"/> Inicio sesión</a>
+            <a href="Registro.html" style="color:#BA68ED;">&#187; No tengo cuenta</a>
+        </div>
+		
+        <!--div id="logined">
+            <form method="post" action="Sesion">
+                ¡Bienvenido, 
+                <a href="PerfilUsuario">Nombre de usuario</a>
+                <input type="hidden" name="accion" value="cerrarSesion"/>
+                <input type="submit" value=""/>
+            </form>
+        </div-->
+        
+        <div class="overlay"></div>
+        
+        <div class="modal">
+            <p class="closeBtn"><img src="images/close.png" width="25"/></p>
+            <h2>Inicia sesión</h2>
+            <br><br>
+                <p><input type="email" name="email" placeholder="Correo electrónico"></p>
+                <br>
+                <p><input type="password" name="password" placeholder="Contraseña"></p>
+                <input type="hidden" name="accion" value="iniciarSesion"/>
+                <br><br>
+                <div style="text-align:center">
+                    <input style="display:inline;" type="submit" value="Iniciar sesión"/>
+                </div>
+        </div>
+
+        <div id="header">
+                <h1><label onClick="location.href='index.html'">Noticias LMAD</label></h1>
+        </div>
+        
+        <div id="menuPrincipal">
+            <ul class="menu"> 
+                     <li><a href="Seccion_blanco.html">Arte</a>
+					 <li><a href="Seccion.html">Asesorías</a>
+					 <li><a href="Seccion.html">Eventos</a>
+					 <li><a href="Seccion.html">Noticias</a>
+					 <li><a href="Seccion.html">Oferta Laboral</a>
+					 <li><a href="Seccion.html">Programación</a>
+            </ul>
+                        
+        </div>
+		
+        <!--Filtros de búsqueda-->
+        <div class="filtros" style="float:right;">
+            <form method="post" action="ResultadoBusqueda">
+                <h3>Filtros</h3>
+                <div>
+                    Desde:<input name="fechaDesde" type="text" placeholder="01/01/2010" maxlength="10"/>
+                    Hasta:<input name="fechaHasta" type="text" placeholder="01/01/2014" maxlength="10"/><br><br>
+                    <input name="titulo" type="text" placeholder="Título de la noticia" maxlength="50"/><br><br>
+                    <input type="submit" value="Filtrar" />
+                </div>
+            </form>
+        </div>
+
+            <ul class="resultados">
+                <h2>Resultados de la búsqueda</h2>
+                    <li onClick="location.href='Noticia.html'">
+                        <img src="images/1.jpg"/>
+                        <h3>Título de la noticia</h3>
+                        <div class="truncate">Descripción de la noticia</div>
+                        <div class="fecha">Fecha de la noticia</div>
+                    </li>
+					
+					<li onClick="location.href='Noticia.html'">
+                        <img src="images/1.jpg"/>
+                        <h3>Título de la noticia</h3>
+                        <div class="truncate">Descripción de la noticia</div>
+                        <div class="fecha">Fecha de la noticia</div>
+                    </li>
+					
+					<li onClick="location.href='Noticia.html'">
+                        <img src="images/1.jpg"/>
+                        <h3>Título de la noticia</h3>
+                        <div class="truncate">Descripción de la noticia</div>
+                        <div class="fecha">Fecha de la noticia</div>
+                    </li>
+        
+        <!--div style="margin:68px auto;width:61%;">
+            <h2>Resultados de la búsqueda</h2>
+            <h3>No hay resultados</h3>
+        </div>
+        
+        <div class="filtros" style="clear:both;margin:50px auto">
+            <form method="post" action="ResultadoBusqueda">
+                <h3>Filtros</h3>
+                <div>
+                    Desde:<input name="fechaDesde" type="text" placeholder="01/01/2010"/>
+                    Hasta:<input name="fechaHasta" type="text" placeholder="01/01/2014"/><br><br>
+                    <input name="titulo" type="text" placeholder="Título de la noticia"/><br><br>
+                    <input type="submit" value="Filtrar" />
+                </div>
+            </form>
+        </div-->
+            </ul>
+
+        <div id="footer">
+			Secciones: <a href="Seccion_blanco.html">Arte</a>|
+			<a href="Seccion.html">Asesorías</a>|
+			<a href="Seccion.html">Eventos</a>|
+			<a href="Seccion.html">Noticias</a>|
+			<a href="Seccion.html">Oferta Laboral</a>|
+			<a href="Seccion.html">Programación</a>
+			<p>
+			Noticias LMAD es un sitio web, producto como proyecto final de la materia de Programación y Aplicaciones
+			para la Web, de la carrera de Licenciado en Multimedia y Animación Digital,
+			impartida en la Facultad de Ciencias Físico-Matemáticas, en la Universidad Autónoma de 
+			Nuevo León.
+			</p>
+		</div>
+        <script type='text/javascript' src='js/jquery.modal.js'></script>
+        <script type='text/javascript' src='js/site.js'></script>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+        <link rel="stylesheet" type="text/css" href="estilos/Editar.css">
+        <script language="javascript" type="text/javascript" src="js/CodigoJavaScript.js"></script>
+        <meta charset="utf8"/>
+        <title>Editar secciones</title>
+    </head>
+    <body>
+
+        <div id="logined">
+            <form method="post" action="Sesion">
+                ¡Bienvenido, 
+                <a href="PerfilUsuario.html">Nombre de usuario</a>
+                <input type="hidden" name="accion" value="cerrarSesion"/>
+                <input type="submit" value=""/>
+            </form>
+        </div>
+
+        <div id="header">
+            <h1><label onClick="location.href='index.html'">Noticias LMAD</label></h1>
+        </div>
+
+        <!--Cuerpo principal de la página-->
+        <div id="agrupar">
+            <div class="modificar">
+                <table id="tabla">
+                    <thead>
+                        <th>Título</th>
+                        <th>Reportero</th>
+                        <th>Sección</th>
+                        <th>Editar</th>
+                        <th>Aprobar</th>
+                    </thead>
+                        <tr>
+                            <td>
+                                Título de la noticia
+                            </td>
+                            <td>
+                                Nombre del reportero
+                            </td>
+                            <td>
+                                Sección a la que pertenece
+                            </td>
+                            <td>
+                                <form method="" action="">
+                                    <input name="id" type="hidden" value=""/>
+                                    <input name="accion" type="hidden" value="eliminar"/>
+                                    <input type="submit" value="Eliminar"/>
+                                </form>
+                            </td>
+                           
+                            <td>
+                                <form method="" action="">
+                                    <input name="id" type="hidden" value=""/>
+                                    <input name="accion" type="hidden" value="aprobar"/>
+                                    <input type="submit" value="Aprobar"/>
+                                </form>
+                            </td>
+                           
+                            <!--td>
+                                Noticia aprobada
+                            </td-->
+                        </tr>
+                </table>
+            </div>
+                <br><br><br>
+                <button onClick="location.href='PerfilUsuario.html'">Regresar al perfil</button>
+        </div>
+    </body>
+</html>

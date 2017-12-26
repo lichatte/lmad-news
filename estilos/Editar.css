@@ -1,0 +1,46 @@
+.modificar input[type="submit"][value="Guardar"]{
+    margin-top:20px;
+}
+.modificar input[type="text"]{
+    margin:02px;
+}
+.modificar form{
+    display:inline;
+}
+.orden{
+    width:30px;
+}
+#instrucciones{
+	text-align:right;
+	margin:0 0 25px 30px;
+}
+#agrupar{
+	margin:0 auto 25px;
+	width:50%;
+        min-width:550px;
+	padding:35px;
+        background-color:#90E8E1;
+        text-align:center;
+}
+#imagenNoticia{
+    width:auto;
+    height:250px;
+    margin:15px;
+}
+.modificar textarea{
+    margin:05px;
+    width:80%;
+    max-width:700px;
+}
+.modificar p{
+    margin-top:25px;
+    margin-bottom:05px;
+}
+
+#tabla td{
+    padding:02px 05px;
+    border:solid 01px black;
+    vertical-align: center;
+}
+/*-----------------------------------*/
+/*-------Input type file-------------*/

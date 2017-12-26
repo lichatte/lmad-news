@@ -1,0 +1,23 @@
+#seccionesAmodificar input[type="submit"]{
+    margin-top:20px;
+}
+#seccionesAmodificar input[type="text"]{
+    margin:02px;
+}
+#seccionesAmodificar form{
+    display:inline;
+}
+.orden{
+    width:30px;
+}
+#instrucciones{
+	text-align:right;
+	margin:0 0 25px 30px;
+}
+#agrupar{
+	margin:0 auto 25px;
+	width:50%;
+	padding:35px;
+        background-color:#90E8E1;
+        text-align:center;
+}

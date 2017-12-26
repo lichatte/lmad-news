@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+        <link rel="stylesheet" type="text/css" href="estilos/Editar.css">
+        <script language="javascript" type="text/javascript" src="js/CodigoJavaScript.js"></script>
+		<meta charset="utf8"/>
+        <title>Editar noticias</title>
+    </head>
+    <body>
+        <div id="logined">
+            <form method="" action="">
+                ¡Bienvenido, 
+                <a href="PerfilUsuario.html">Nombre de usuario</a>
+                <input type="hidden" name="accion" value="cerrarSesion"/>
+                <input type="submit" value=""/>
+            </form>
+        </div>
+        
+        <div id="header">
+            <h1><label onClick="location.href='index.html'">Noticias LMAD</label></h1>
+        </div>
+        
+        <!--Cuerpo principal de la página-->
+        <div id="agrupar">
+            <div id="instrucciones">
+                Editar noticia
+            </div>
+            
+            <div class="modificar">
+                <form enctype="multipart/form-data" method="" action="">
+                    <p>Título</p>
+                    <input name="titulo" type="text" size="70" value=""><br>
+                    <br><input type="file" name="imagenes"/>
+                    <source src="" type="image/jpeg" />
+                    <p>Descripción de la noticia</p>
+                    <textarea name="descripcion" rows="6" cols="70"></textarea><br>
+                    <p>Texto de la noticia</p>
+                    <textarea name="texto" rows="10" cols="70"></textarea><br>
+                    <label>Sección</label>
+                    <select name="seccion">
+                        <option value="">
+						Arte
+                        </option>
+						<option value="">
+						Asesorías
+                        </option>
+						<option value="">
+						Eventos
+                        </option>
+						<option value="">
+						Noticias
+                        </option>
+						<option value="">
+						Oferta Laboral
+                        </option>
+						<option value="">
+						Programación
+                        </option>
+                    </select>
+                    <p>Videos</p>
+                    <div>
+                        <input type="file"/>
+                    </div> 
+                    <input name="seccionNombre" type="hidden" value=""/>
+                    <input name="id" type="hidden" value=""/>
+                    <input name="accion" type="hidden" value="editar"/>
+                    <input type="submit" value="Guardar"/>
+                </form>
+                    <button onClick="location.href='index.html'">Cancelar</button>
+            </div>
+			
+            <!--div id="instrucciones">
+            Nueva noticia
+            </div>
+            
+            <div class="modificar">
+                <form method="" action="">
+                    <p>Titulo</p>
+                    <input name="titulo" type="text" size="70" value=""><br>
+                    <img id="imagenNoticia" src="images/1.jpg"/>
+                    <br><input name="imagenes" type="file"/>
+                    <p>Descripción de la noticia</p>
+                    <textarea name="descripcion" rows="6" cols="70"></textarea><br>
+                    <p>Texto de la noticia</p>
+                    <textarea name="texto" rows="10" cols="70"></textarea><br>
+                    <label>Seccion</label>
+                    <select name="seccion">
+                   
+                           <option value="">
+                                   
+                           </option>
+                   
+                    </select>
+                    <p>Videos</p>
+                    <div>
+                        <input type="file" name="videos"/>
+                    </div>
+                    <input name="accion" type="hidden" value="nueva"/>
+                    <input type="hidden" name="usuario" value=""/>
+                    <input type="submit" value="Guardar"/>
+                </form>
+                    <button onClick="location.href='Principal'">Cancelar</button>
+            </div>
+        </div-->
+        <script></script>
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript">
+           
+        </script>
+    </body>
+</html>
